@@ -12,8 +12,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('!hello'):
-        await message.channel.send('Hello!')
+        await message.channel.send($@"Hello {message.Author.Mention}")
 with open('key') as fp:
     token = fp.readline().strip()
-    print(token)
     client.run(token)
