@@ -16,4 +16,4 @@ async def on_message(message):
 with open('key') as fp:
     token = fp.readline().strip()
     print(token)
-    client.run(os.getenv(token))
+    client.run(token)
