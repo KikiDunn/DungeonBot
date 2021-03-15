@@ -12,7 +12,13 @@ async def on_message(message):
         return
 
     if message.content.startswith('!hello'):
-        await message.channel.send("Hello @"+ message.author.mention)
+        await message.channel.send("Hello "+ message.author.mention)
 with open('key') as fp:
     token = fp.readline().strip()
     client.run(token)
+#to run:
+#cd DungeonBot/
+#setsid python3 test.py
+#to kill 
+#ps -ef
+#kill ####
