@@ -1,7 +1,7 @@
 import discord 
 class eventHandler:
         def __init__(self):
-            
+            self.default = true
         def event(self, message):
             if message.author == client.user:
                 return
