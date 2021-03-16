@@ -1,6 +1,6 @@
 #to run:
 #cd DungeonBot/
-#setsid python3 test.py
+#setsid python3 main.py
 #to kill 
 #ps -ef
 #kill ####
@@ -19,7 +19,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    else
+    else:
         if message.content.startswith('!hello'):
             await message.channel.send("Hello "+ message.author.mention)
         if message.content.startswith('!kill'):
