@@ -7,6 +7,7 @@ class eventHandler:
                 return
             else:
                 if message.content.startswith('!hello'):
-                    await message.channel.send("Hello "+ message.author.mention)
+                    print(message.author)
+                    return "Hello "+ message.author.mention
                 if message.content.startswith('!kill'):
                     quit()
