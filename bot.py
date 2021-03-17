@@ -9,6 +9,6 @@ class eventHandler:
                 if message.content.startswith('!hello'):
                     return "Hello "+ message.author.mention
                 if message.content.startswith('!kill'):
-                    if message.author.name == "KikiJiki":
+                    if message.author.id == "719874724951359578":
                         return "Process terminated."
                 return ""
