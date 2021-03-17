@@ -17,7 +17,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     output = _bot.event(message, client)
-    if (output)
+    if (output != "")
         await message.channel.send(output)
 with open('key') as fp:
     token = fp.readline().strip()
