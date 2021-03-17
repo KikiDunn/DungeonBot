@@ -19,6 +19,8 @@ async def on_message(message):
     output = _bot.event(message, client)
     if (output != ""):
         await message.channel.send(output)
+        if (output == "Process terminated.")
+            quit()
 with open('key') as fp:
     token = fp.readline().strip()
     client.run(token)
