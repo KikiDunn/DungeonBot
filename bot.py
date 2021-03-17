@@ -4,11 +4,11 @@ class eventHandler:
             self.default = True
         def event(self, message, client):
             if message.author == client.user:
-                return
+                return ""
             else:
                 if message.content.startswith('!hello'):
                     return "Hello "+ message.author.mention
                 if message.content.startswith('!kill'):
                     if (message.author = "KikiJiki#5584")
                         quit()
-                return
+                return ""
