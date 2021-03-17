@@ -9,6 +9,6 @@ class eventHandler:
                 if message.content.startswith('!hello'):
                     return "Hello "+ message.author.mention
                 if message.content.startswith('!kill'):
-                    if message.author = "KikiJiki#5584":
+                    if message.author == "KikiJiki#5584":
                         quit()
                 return ""
